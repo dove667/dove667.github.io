@@ -58,6 +58,7 @@ section {
 .section-title i {
     margin-right: 10px;
     background: var(--gradient-tech);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -92,6 +93,7 @@ section {
     font-size: 1.5rem;
     font-weight: bold;
     background: var(--gradient-tech);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -196,6 +198,7 @@ section {
 
 .gradient-text {
     background: var(--gradient-tech);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -296,6 +299,7 @@ section {
 .profile-icon {
     font-size: 150px;
     background: var(--gradient-tech);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -729,7 +733,7 @@ section {
 
 .contact-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 60px;
 }
 

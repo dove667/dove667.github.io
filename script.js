@@ -185,25 +185,21 @@ cards.forEach(card => {
     cardObserver.observe(card);
 });
 
-// ===== Contact Form Handling =====
+// ===== Contact Form Handling (disabled: no form on page) =====
 const contactForm = document.getElementById('contactForm');
-
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // Get form values
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
-    
-    // Here you would typically send the form data to a server
-    // For now, we'll just show an alert
-    alert(`感谢您的留言，${name}！我会尽快回复您。\n\n注意：这是一个静态网站演示，实际的表单提交功能需要配置后端服务。`);
-    
-    // Reset form
-    contactForm.reset();
-});
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+        
+        alert(`感谢您的留言，${name}！我会尽快回复您。\n\n注意：这是一个静态网站演示，实际的表单提交功能需要配置后端服务。`);
+        contactForm.reset();
+    });
+}
 
 // ===== Neural Network Animation =====
 const neuralNetwork = document.querySelector('.neural-network');
@@ -316,7 +312,7 @@ console.log('%c欢迎来到我的个人网站！',
     'font-size: 20px; color: #6366f1; font-weight: bold;');
 console.log('%c如果你对AI技术感兴趣，欢迎与我交流！', 
     'font-size: 14px; color: #8b5cf6;');
-console.log('%c联系方式: zhangsihua@example.com', 
+console.log('%c联系方式: 12410106@mail.sustech.edu.cn', 
     'font-size: 12px; color: #94a3b8;');
 
 // ===== Performance optimization: Lazy load images =====
