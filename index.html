@@ -1,507 +1,294 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="张思华 - 人工智能专业大学生的个人网站">
-    <meta name="keywords" content="人工智能, AI, 机器学习, 深度学习, 张思华">
-    <title>张思华 | AI学生 & 开发者</title>
+    <meta name="description" content="张思华 - 南方科技大学人工智能学院本科生 | Sihua Zhang - SUSTech Undergraduate">
+    <meta name="keywords" content="张思华, Sihua Zhang, 人工智能, AI, 南方科技大学, SUSTech">
+    <title>张思华 | Sihua Zhang</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container">
-            <div class="nav-brand">
-                <i class="fas fa-robot"></i>
-                <span>张思华</span>
+            <a href="#home" class="nav-brand">Sihua Zhang</a>
+            <div class="nav-right">
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link" data-en="Home" data-zh="首页">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-en="About" data-zh="关于">About</a></li>
+                    <li><a href="#education" class="nav-link" data-en="Education" data-zh="教育">Education</a></li>
+                    <li><a href="#projects" class="nav-link" data-en="Projects" data-zh="项目">Projects</a></li>
+                    <li><a href="#skills" class="nav-link" data-en="Skills" data-zh="技能">Skills</a></li>
+                    <li><a href="#contact" class="nav-link" data-en="Contact" data-zh="联系">Contact</a></li>
+                </ul>
+                <button class="lang-toggle" id="langToggle" title="Switch language">
+                    <span class="lang-label" data-en="中文" data-zh="EN">中文</span>
+                </button>
             </div>
-            <div class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link">首页</a></li>
-                <li><a href="#about" class="nav-link">关于我</a></li>
-                <li><a href="#skills" class="nav-link">技能</a></li>
-                <li><a href="#projects" class="nav-link">项目</a></li>
-                <li><a href="#education" class="nav-link">教育经历</a></li>
-                <li><a href="#contact" class="nav-link">联系方式</a></li>
-            </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero / Intro -->
     <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="neural-network"></div>
-        </div>
         <div class="container hero-content">
             <div class="hero-text">
-                <h1 class="hero-title">
-                    你好，我是 <span class="gradient-text">张思华</span>
+                <p class="hero-greeting" data-en="Hi, I'm" data-zh="你好，我是">Hi, I'm</p>
+                <h1 class="hero-name">
+                    <span data-en="Sihua Zhang" data-zh="张思华" class="hero-name-main">Sihua Zhang</span>
+                    <span class="hero-name-sub" data-en="张思华" data-zh="Sihua Zhang">张思华</span>
                 </h1>
-                <p class="hero-subtitle">
-                    <span class="typing-text"></span>
-                    <span class="cursor">|</span>
+                <p class="hero-tagline" data-en="Undergraduate Student in Artificial Intelligence" data-zh="人工智能专业本科生">
+                    Undergraduate Student in Artificial Intelligence</p>
+                <p class="hero-affiliation">
+                    <a href="https://www.sustech.edu.cn/" target="_blank" rel="noopener noreferrer"
+                        data-en="Southern University of Science and Technology (SUSTech)"
+                        data-zh="南方科技大学 (SUSTech)">Southern University of Science and Technology (SUSTech)</a>
                 </p>
-                <p class="hero-description">
-                    热爱人工智能，致力于用技术改变世界
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">
-                        <i class="fas fa-code"></i> 查看项目
+                <div class="hero-links">
+                    <a href="mailto:12410106@mail.sustech.edu.cn" class="hero-link" title="Email">
+                        <i class="fas fa-envelope"></i>
                     </a>
-                    <a href="#contact" class="btn btn-secondary">
-                        <i class="fas fa-envelope"></i> 联系我
+                    <a href="https://github.com/dove667" target="_blank" rel="noopener noreferrer" class="hero-link"
+                        title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#contact" class="hero-link" title="WeChat">
+                        <i class="fab fa-weixin"></i>
                     </a>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="profile-card">
-                    <div class="profile-icon">
-                        <i class="fas fa-user-astronaut"></i>
-                    </div>
-                </div>
+            <div class="hero-avatar">
+                <img src="avatar.jpg" alt="Sihua Zhang" class="avatar-img">
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <a href="#about">
-                <i class="fas fa-chevron-down"></i>
-            </a>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">
-                <i class="fas fa-user"></i> 关于我
-            </h2>
+            <h2 class="section-title" data-en="About Me" data-zh="关于我">About Me</h2>
             <div class="about-content">
-                <div class="about-text">
-                    <h3>人工智能专业学生</h3>
-                    <p>
-                        我是一名热情的人工智能专业大学生，对机器学习、深度学习和计算机视觉充满热情。
-                        我相信人工智能技术能够为人类社会带来积极的改变，并致力于成为这一领域的贡献者。
-                    </p>
-                    <p>
-                        在学习过程中，我不断探索最新的AI技术，包括自然语言处理、计算机视觉、强化学习等领域。
-                        我喜欢将理论知识应用到实际项目中，通过实践来加深对技术的理解。
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <i class="fas fa-code"></i>
-                            <div class="stat-content">
-                                <h4>5+</h4>
-                                <p>完成项目</p>
-                            </div>
-                        </div>
-                        <div class="stat-item">
-                            <i class="fas fa-book"></i>
-                            <div class="stat-content">
-                                <h4>10+</h4>
-                                <p>技术课程</p>
-                            </div>
-                        </div>
-                        <div class="stat-item">
-                            <i class="fas fa-trophy"></i>
-                            <div class="stat-content">
-                                <h4>0+</h4>
-                                <p>竞赛获奖</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-interests">
-                    <h3>研究兴趣</h3>
-                    <div class="interests-grid">
-                        <div class="interest-card">
-                            <i class="fas fa-brain"></i>
-                            <h4>深度学习</h4>
-                            <p>神经网络架构与优化</p>
-                        </div>
-                        <div class="interest-card">
-                            <i class="fas fa-eye"></i>
-                            <h4>计算机视觉</h4>
-                            <p>图像识别与目标检测</p>
-                        </div>
-                        <div class="interest-card">
-                            <i class="fas fa-comments"></i>
-                            <h4>自然语言处理</h4>
-                            <p>语言模型与文本分析</p>
-                        </div>
-                        <div class="interest-card">
-                            <i class="fas fa-robot"></i>
-                            <h4>强化学习</h4>
-                            <p>智能决策与控制</p>
-                        </div>
-                    </div>
-                </div>
+                <p data-en="I am a Class of 2024 undergraduate student at the School of Artificial Intelligence, Southern University of Science and Technology (SUSTech). I am deeply curious about the nature of intelligence — I believe that in building machines that learn and reason, we also come to understand more about what it means to be human."
+                    data-zh="我是南方科技大学人工智能学院的 2024 级本科生。我对智能的本质充满好奇——我相信，在构建能够学习与推理的机器的过程中，我们也在更深刻地理解人类自身。">
+                    I am a Class of 2024 undergraduate student at the School of Artificial Intelligence, Southern
+                    University of Science and Technology (SUSTech). I am deeply curious about the nature of intelligence
+                    — I believe that in building machines that learn and reason, we also come to understand more about
+                    what it means to be human.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <!-- Education -->
+    <section id="education" class="education">
         <div class="container">
-            <h2 class="section-title">
-                <i class="fas fa-tools"></i> 技能专长
-            </h2>
-            <div class="skills-content">
-                <div class="skill-category">
-                    <h3><i class="fas fa-laptop-code"></i> 编程语言</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Python</span>
-                                <span class="skill-level">90%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
+            <h2 class="section-title" data-en="Education" data-zh="教育经历">Education</h2>
+            <div class="edu-list">
+                <div class="edu-item">
+                    <div class="edu-header">
+                        <div>
+                            <h3 data-en="Southern University of Science and Technology (SUSTech)" data-zh="南方科技大学">
+                                Southern University of Science and Technology (SUSTech)</h3>
+                            <p class="edu-degree"
+                                data-en="B.Eng. in Artificial Intelligence, School of Artificial Intelligence"
+                                data-zh="人工智能学院 · 人工智能专业 · 工学学士">B.Eng. in Artificial Intelligence, School of Artificial
+                                Intelligence</p>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>C++</span>
-                                <span class="skill-level">75%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Java</span>
-                                <span class="skill-level">70%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 70%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>JavaScript</span>
-                                <span class="skill-level">65%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 65%"></div>
-                            </div>
-                        </div>
+                        <span class="edu-date" data-en="2024 – Present" data-zh="2024 – 至今">2024 – Present</span>
                     </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-brain"></i> AI/ML 框架</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>PyTorch</span>
-                                <span class="skill-level">85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Scikit-learn</span>
-                                <span class="skill-level">85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Huggingface</span>
-                                <span class="skill-level">75%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> 工具与技术</h3>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Git</span>
-                        <span class="tech-tag">Docker</span>
-                        <span class="tech-tag">Linux</span>
-                        <span class="tech-tag">SQL</span>
-                        <span class="tech-tag">Jupyter</span>
-                        <span class="tech-tag">NumPy</span>
-                        <span class="tech-tag">Pandas</span>
-                        <span class="tech-tag">Matplotlib</span>
-                    </div>
+                    <ul class="edu-details">
+                        <li>GPA: 3.79 / 4.0</li>
+                        <li data-en="Core Courses: Artificial Intelligence, Machine Learning, Deep Learning"
+                            data-zh="主修课程：人工智能、机器学习、深度学习">Core Courses: Artificial Intelligence, Machine Learning, Deep
+                            Learning</li>
+                    </ul>
                 </div>
             </div>
+
+            <h3 class="subsection-title" data-en="Self-Study & Online Courses" data-zh="自学 & 在线课程">Self-Study & Online
+                Courses</h3>
+            <ul class="course-list">
+                <li>Machine Learning Specialization — DeepLearning.AI</li>
+                <li>Deep Learning Specialization — DeepLearning.AI</li>
+                <li data-en="Dive into Deep Learning — Mu Li" data-zh="动手学深度学习 — 李沐">Dive into Deep Learning — Mu Li
+                </li>
+                <li>Advanced NLP — CMU</li>
+                <li>CS236 Deep Generative Models — Stanford</li>
+                <li>Information Theory, Pattern Recognition, and Neural Networks — Cambridge</li>
+                <li>CS336 Building Language Models From Scratch — Stanford</li>
+            </ul>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">
-                <i class="fas fa-project-diagram"></i> 项目展示
-            </h2>
+            <h2 class="section-title" data-en="Projects" data-zh="项目">Projects</h2>
             <div class="projects-grid">
+
                 <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-image"></i>
+                    <div class="project-header">
+                        <h3 data-en="HPC Compilation Optimization" data-zh="HPC 编译优化">HPC Compilation Optimization</h3>
+                        <a href="https://github.com/dove667/CloverLeaf_SCC" target="_blank" rel="noopener noreferrer"
+                            class="project-github" title="View on GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
                     </div>
-                    <h3>handonML</h3>
-                    <p>自学机器学习的学习笔记及实战项目</p>
+                    <p data-en="Compilation optimization project for the SUSTech Student Cluster Competition (SCC), performing performance profiling and parallel optimization on CloverLeaf."
+                        data-zh="南科大超算竞赛（SCC）的编译优化项目，针对 CloverLeaf 进行性能分析与并行优化。">
+                        Compilation optimization project for the SUSTech Student Cluster Competition (SCC), performing
+                        performance profiling and parallel optimization on CloverLeaf.
+                    </p>
                     <div class="project-tags">
-                        <span>pandas</span>
-                        <span>numpy</span>
-                        <span>sklearn</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/dove667/handonML" target="_blank" rel="noopener noreferrer" class="project-link">
-                            <i class="fab fa-github"></i> 代码
-                        </a>
-                        <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i> Demo
-                        </a>
+                        <span>Compiler Optimization</span>
+                        <span>Parallel Computing</span>
+                        <span>Performance Profiling</span>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-comments"></i>
-                    </div>
-                    <h3>handonDL</h3>
-                    <p>自学深度学习的学习笔记及实战项目</p>
-                    <div class="project-tags">
-                        <span>pytorch</span>
-                        <span>CNN & RNN</span>
-                        <span>Transformer</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/dove667/handonDL" target="_blank" rel="noopener noreferrer" class="project-link">
-                            <i class="fab fa-github"></i> 代码
-                        </a>
-                        <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i> Demo
+                    <div class="project-header">
+                        <h3>Reversi AI</h3>
+                        <a href="https://github.com/dove667/CS303-Artificial-intelligence" target="_blank"
+                            rel="noopener noreferrer" class="project-github" title="View on GitHub">
+                            <i class="fab fa-github"></i>
                         </a>
                     </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>HPC 编译优化</h3>
-                    <p>参加南科大超算竞赛的编译优化项目技术报告</p>
-                    <div class="project-tags">
-                        <span>编译优化</span>
-                        <span>并行计算</span>
-                        <span>性能分析</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/dove667/CloverLeaf_SCC" target="_blank" rel="noopener noreferrer" class="project-link">
-                            <i class="fab fa-github"></i> 代码
-                        </a>
-                        <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i> Demo
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-gamepad"></i>
-                    </div>
-                    <h3>Reversi AI</h3>
-                    <p>课程项目，实现了基于Minimax + alphabeta pruning的黑白棋AI</p>
+                    <p data-en="Course project implementing an Othello AI based on Minimax algorithm with Alpha-Beta pruning."
+                        data-zh="课程项目，实现了基于 Minimax 算法与 Alpha-Beta 剪枝的黑白棋 AI。">
+                        Course project implementing an Othello AI based on Minimax algorithm with Alpha-Beta pruning.
+                    </p>
                     <div class="project-tags">
                         <span>Minimax</span>
                         <span>Alpha-Beta Pruning</span>
-                        <span>Huristic Function</span>
                         <span>Game Theory</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/dove667/CS303-Artificial-intelligence" target="_blank" rel="noopener noreferrer" class="project-link">
-                            <i class="fab fa-github"></i> 代码
-                        </a>
-                        <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i> Demo
-                        </a>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-video"></i>
+                    <div class="project-header">
+                        <h3 data-en="Sokoban Game" data-zh="推箱子游戏">Sokoban Game</h3>
+                        <a href="https://github.com/dove667/Sokoban" target="_blank" rel="noopener noreferrer"
+                            class="project-github" title="View on GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
                     </div>
-                    <h3>Sokoban</h3>
-                    <p>课程项目，实现了使用java实现的Sokoban游戏</p>
+                    <p data-en="A Sokoban puzzle game built with Java / JavaFX, featuring level design and a graphical interface."
+                        data-zh="使用 Java / JavaFX 开发的推箱子游戏，包含关卡设计和图形界面。">
+                        A Sokoban puzzle game built with Java / JavaFX, featuring level design and a graphical
+                        interface.
+                    </p>
                     <div class="project-tags">
                         <span>Java</span>
                         <span>JavaFX</span>
-                        <span>游戏开发</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/dove667" target="_blank" rel="noopener noreferrer" class="project-link">
-                            <i class="fab fa-github"></i> 代码
-                        </a>
-                        <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i> Demo
-                        </a>
+                        <span>Game Dev</span>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-language"></i>
+                    <div class="project-header">
+                        <h3 data-en="Gesture-Controlled Snake Game" data-zh="手势控制贪吃蛇">Gesture-Controlled Snake Game</h3>
+                        <a href="https://github.com/EricFeng9/25Fall-CS324-deeplearning-project" target="_blank"
+                            rel="noopener noreferrer" class="project-github" title="View on GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
                     </div>
-                    <h3></h3>
-                    <p></p>
+                    <p data-en="A Snake game controlled by hand gestures, combining hand pose estimation and computer vision."
+                        data-zh="结合手部姿态估计与计算机视觉，实现手势控制的贪吃蛇游戏。">
+                        A Snake game controlled by hand gestures, combining hand pose estimation and computer vision.
+                    </p>
                     <div class="project-tags">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/dove667" target="_blank" rel="noopener noreferrer" class="project-link">
-                            <i class="fab fa-github"></i> 代码
-                        </a>
-                        <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i> Demo
-                        </a>
+                        <span>OpenCV</span>
+                        <span>MediaPipe</span>
+                        <span>Python</span>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education">
+    <!-- Skills -->
+    <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">
-                <i class="fas fa-graduation-cap"></i> 教育经历
-            </h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-university"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <h3>人工智能专业</h3>
-                        <h4>南方科技大学 工学院</h4>
-                        <p class="timeline-date">
-                            <i class="fas fa-calendar"></i> 2024年 - 至今
-                        </p>
-                        <ul>
-                            <li>GPA: 3.75/4.0</li>
-                            <li>主修课程：人工智能、机器学习、深度学习</li>
-                            <li></li>
-                            <li></li>
-                        </ul>
+            <h2 class="section-title" data-en="Skills" data-zh="技能">Skills</h2>
+            <div class="skills-content">
+                <div class="skill-group">
+                    <h3 data-en="Programming Languages" data-zh="编程语言">Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>C / C++</span>
+                        <span>Java</span>
                     </div>
                 </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <h3>在线课程与证书</h3>
-                        <h4>持续学习</h4>
-                        <p class="timeline-date">
-                            <i class="fas fa-calendar"></i> 2020年 - 至今
-                        </p>
-                        <ul>
-                            <li>机器学习专项课程 (DeepLearning.AI)</li>
-                            <li>深度学习专项课程 (DeepLearning.AI)</li>
-                            <li>动手学深度学习 (李沐)</li>
-                            <li>Advanced NLP (CMU)</li>
-                            <li>Building a Language Model From Scratch (Stanford)</li>
-                        </ul>
+                <div class="skill-group">
+                    <h3 data-en="AI / ML Frameworks" data-zh="AI / ML 框架">AI / ML Frameworks</h3>
+                    <div class="skill-tags">
+                        <span>PyTorch</span>
+                        <span>Scikit-learn</span>
+                        <span>HuggingFace</span>
+                        <span>OpenCV</span>
                     </div>
                 </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <h3>竞赛与获奖</h3>
-                        <h4>各类技术竞赛</h4>
-                        <p class="timeline-date">
-                            <i class="fas fa-calendar"></i> 2021年 - 2024年
-                        </p>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
+                <div class="skill-group">
+                    <h3 data-en="Tools & Technologies" data-zh="工具 & 技术">Tools & Technologies</h3>
+                    <div class="skill-tags">
+                        <span>Git</span>
+                        <span>Linux</span>
+                        <span>Docker</span>
+                        <span>Jupyter</span>
+                        <span>NumPy</span>
+                        <span>Pandas</span>
+                        <span>Matplotlib</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">
-                <i class="fas fa-envelope"></i> 联系方式
-            </h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>让我们一起交流</h3>
-                    <p>如果你对AI技术感兴趣，或者想要讨论项目合作，欢迎通过以下方式联系我。</p>
-                    
-                    <div class="contact-items">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>邮箱</h4>
-                                <p>12410106@mail.sustech.edu.cn</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-github"></i>
-                            <div>
-                                <h4>GitHub</h4>
-                                <p>github.com/dove667</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-weixin"></i>
-                            <div>
-                                <h4>微信</h4>
-                                <p>Zsh13714328415</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>位置</h4>
-                                <p>中国·深圳</p>
-                            </div>
-                        </div>
+            <h2 class="section-title" data-en="Contact" data-zh="联系方式">Contact</h2>
+            <div class="contact-grid">
+                <a href="mailto:12410106@mail.sustech.edu.cn" class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>12410106@mail.sustech.edu.cn</p>
                     </div>
-
-                    <div class="social-links">
-                        <a href="https://github.com/dove667" target="_blank" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fas fa-blog"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-twitter"></i>
-                        </a>
+                </a>
+                <a href="https://github.com/dove667" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <i class="fab fa-github"></i>
+                    <div>
+                        <h4>GitHub</h4>
+                        <p>github.com/dove667</p>
+                    </div>
+                </a>
+                <div class="contact-card">
+                    <i class="fab fa-weixin"></i>
+                    <div>
+                        <h4>WeChat</h4>
+                        <p>Zsh13714328415</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4 data-en="Location" data-zh="位置">Location</h4>
+                        <p data-en="Shenzhen, China" data-zh="中国 · 深圳">Shenzhen, China</p>
                     </div>
                 </div>
             </div>
@@ -511,18 +298,16 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2024 张思华. All rights reserved.</p>
-                <p>用 <i class="fas fa-heart"></i> 和 <i class="fas fa-code"></i> 制作</p>
-            </div>
+            <p>&copy; 2025 Sihua Zhang</p>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button id="backToTop" class="back-to-top">
+    <!-- Back to Top -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
     </button>
 
     <script src="script.js"></script>
 </body>
+
 </html>
