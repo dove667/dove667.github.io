@@ -113,7 +113,7 @@ backToTopBtn.addEventListener('click', () => {
 
 // ===== Scroll Fade-in =====
 const fadeElements = document.querySelectorAll(
-    '.project-card, .contact-card, .skill-group, .edu-item, .about-content'
+    '.project-card, .contact-card, .skill-group, .edu-item, .about-content, .news-list'
 );
 
 const fadeObserver = new IntersectionObserver((entries) => {
