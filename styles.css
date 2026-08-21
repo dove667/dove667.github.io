@@ -619,6 +619,53 @@ a.contact-card:hover {
     transform: translateY(0);
 }
 
+/* ===== Research ===== */
+.research {
+    background: var(--color-bg-alt);
+}
+
+.research-intro {
+    max-width: 720px;
+    color: var(--color-text-secondary);
+    font-size: 0.98rem;
+    line-height: 1.85;
+    margin-bottom: 28px;
+}
+
+.research-intro a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+.research-intro a:hover {
+    text-decoration: underline;
+}
+
+.research-focus-list {
+    list-style: none;
+    padding-left: 0;
+    max-width: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 24px;
+}
+
+.research-focus-list li {
+    font-size: 0.92rem;
+    color: var(--color-text-secondary);
+    padding: 3px 0;
+    padding-left: 16px;
+    position: relative;
+}
+
+.research-focus-list li::before {
+    content: '·';
+    position: absolute;
+    left: 4px;
+    color: var(--color-text-muted);
+    font-weight: 700;
+}
+
 /* ===== News ===== */
 .news {
     background: var(--color-bg);

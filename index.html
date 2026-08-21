@@ -29,6 +29,7 @@
                     <li><a href="#home" class="nav-link" data-en="Home" data-zh="首页">Home</a></li>
                     <li><a href="#about" class="nav-link" data-en="About" data-zh="关于">About</a></li>
                     <li><a href="#news" class="nav-link" data-en="News" data-zh="动态">News</a></li>
+                    <li><a href="#research" class="nav-link" data-en="Research" data-zh="研究">Research</a></li>
                     <li><a href="#education" class="nav-link" data-en="Education" data-zh="教育">Education</a></li>
                     <li><a href="#projects" class="nav-link" data-en="Projects" data-zh="项目">Projects</a></li>
                     <li><a href="#skills" class="nav-link" data-en="Skills" data-zh="技能">Skills</a></li>
@@ -95,10 +96,9 @@
                     <span data-en="I am currently working in the group of " data-zh="目前我在统计与数据科学系">I am currently working in
                         the group of </span><a href="https://ghchen.me/" target="_blank" rel="noopener noreferrer"
                         data-en="Guanhua Chen" data-zh="陈冠华老师">Guanhua Chen</a><span
-                        data-en=" in the Department of Statistics and Data Science, focusing on full-duplex Omni models and dynamic thinking-intensity control for large language models."
-                        data-zh="的课题组工作，研究方向是 Omni 全双工大模型与大模型的动态思考强度控制。"> in the Department of Statistics and Data
-                        Science, focusing on full-duplex Omni models and dynamic thinking-intensity control for large
-                        language models.</span>
+                        data-en=" in the Department of Statistics and Data Science, focusing on full-duplex Omni models."
+                        data-zh="的课题组工作，研究方向是 Omni 全双工大模型。"> in the Department of Statistics and Data
+                        Science, focusing on full-duplex Omni models.</span>
                 </p>
             </div>
         </div>
@@ -111,9 +111,8 @@
             <ul class="news-list">
                 <li>
                     <span class="news-date" data-en="Jul 2026" data-zh="2026.07">Jul 2026</span>
-                    <span data-en="Surveying full-duplex techniques for Omni models and dynamic chain-of-thought length control for thinking LLMs."
-                        data-zh="开始调研 Omni 大模型全双工技术，以及思考大模型的动态思维链长度控制。">Surveying full-duplex techniques for Omni
-                        models and dynamic chain-of-thought length control for thinking LLMs.</span>
+                    <span data-en="Surveying full-duplex techniques for Omni models."
+                        data-zh="开始调研 Omni 大模型全双工技术。">Surveying full-duplex techniques for Omni models.</span>
                 </li>
                 <li>
                     <span class="news-date" data-en="May 2026" data-zh="2026.05">May 2026</span>
@@ -121,6 +120,38 @@
                         data-zh="学习大模型高效推理、并行与 KV cache 管理。">Studying efficient LLM inference, parallelism, and KV
                         cache management.</span>
                 </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Research -->
+    <section id="research" class="research">
+        <div class="container">
+            <h2 class="section-title" data-en="Research" data-zh="研究方向">Research</h2>
+            <p class="research-intro">
+                <span data-en="Most AI assistants you have talked to — ChatGPT, Siri, Copilot — work in turns: they wait for you to finish, then answer. "
+                    data-zh="你日常打过交道的 AI——ChatGPT、Siri、Copilot——大多都是“一来一回”：等你说完，它再开口。">Most AI
+                    assistants you have talked to — ChatGPT, Siri, Copilot — work in turns: they wait for you to
+                    finish, then answer. </span><span data-en="Full-duplex Omni models drop that constraint: a single model listens, thinks, and speaks at the same time, so it can interject, react, and stay in lock-step with a real human conversation."
+                    data-zh="全双工 Omni 模型则打破了这种限制——同一个模型同时在“听、想、说”，能够插话、即时反应，和真人对话节奏保持一致。">Full-duplex
+                    Omni models drop that constraint: a single model listens, thinks, and speaks at the same time,
+                    so it can interject, react, and stay in lock-step with a real human conversation.</span>
+            </p>
+            <p class="research-intro">
+                <span data-en="I work on these models in "
+                    data-zh="我在 ">I work on these models in </span><a href="https://ghchen.me/" target="_blank"
+                    rel="noopener noreferrer" data-en="Guanhua Chen's group" data-zh="陈冠华老师的课题组">Guanhua Chen's
+                    group</a><span data-en=". My current focus is making spoken-dialogue systems more responsive and natural, with an emphasis on: low-latency speech-text streaming, real-time interruption handling, and tightly coupling audio and text generation inside one unified model."
+                    data-zh=" 做这方面的工作。当前重点是让口语对话系统更自然、更实时，核心问题包括：语音-文本流的低延迟协同、可被打断时的实时响应，以及在统一模型里把音频和文本生成紧密耦合在一起。">. My current
+                    focus is making spoken-dialogue systems more responsive and natural, with an emphasis on:
+                    low-latency speech-text streaming, real-time interruption handling, and tightly coupling audio
+                    and text generation inside one unified model.</span>
+            </p>
+            <ul class="research-focus-list">
+                <li data-en="Real-time speech-text interleaving" data-zh="语音-文本实时交错生成">Real-time speech-text interleaving</li>
+                <li data-en="Full-duplex interruption handling" data-zh="全双工对话的实时打断处理">Full-duplex interruption handling</li>
+                <li data-en="Unified multimodal speech + text LLM" data-zh="语音+文本统一多模态大模型">Unified multimodal speech + text LLM</li>
+                <li data-en="Streaming inference &amp; low-latency serving" data-zh="流式推理与低延迟部署">Streaming inference &amp; low-latency serving</li>
             </ul>
         </div>
     </section>
@@ -145,9 +176,10 @@
                     <ul class="edu-details">
                         <li data-en="GPA: 3.75 / 4.0 (Year 1), 3.94 / 4.0 (Year 2)"
                             data-zh="GPA：大一 3.75 / 4.0，大二 3.94 / 4.0">GPA: 3.75 / 4.0 (Year 1), 3.94 / 4.0 (Year 2)</li>
-                        <li data-en="Research Interests: Natural Language Processing, Multimodal Large Language Models, Optimization Methods, Efficient Inference"
-                            data-zh="研究兴趣：自然语言处理、多模态大模型、优化方法、高效推理">Research Interests: Natural Language Processing, Multimodal
-                            Large Language Models, Optimization Methods, Efficient Inference</li>
+                        <li data-en="Research Interests: Natural Language Processing, Multimodal Large Language Models, Full-Duplex Omni Models, LLM Optimization Methods"
+                            data-zh="研究兴趣：自然语言处理、多模态大模型、Omni 全双工大模型、大模型优化方法">Research Interests: Natural Language
+                        Processing, Multimodal Large Language Models, Full-Duplex Omni Models, LLM Optimization
+                        Methods</li>
                     </ul>
                 </div>
             </div>
@@ -155,6 +187,9 @@
             <h3 class="subsection-title" data-en="Self-Study & Online Courses" data-zh="自学 & 在线课程">Self-Study & Online
                 Courses</h3>
             <ul class="course-list">
+                <li><a href="https://www.practical-diffusion.org/" target="_blank" rel="noopener noreferrer">6.S184
+                        Generative AI with SDEs — Theory and Practice of Flow &amp; Diffusion Models</a> — MIT
+                    (IAP 2026)</li>
                 <li><a href="https://www.coursera.org/specializations/machine-learning-introduction" target="_blank"
                         rel="noopener noreferrer">Machine Learning Specialization</a> — DeepLearning.AI</li>
                 <li><a href="https://www.coursera.org/specializations/deep-learning" target="_blank"
